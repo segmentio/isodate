@@ -1,0 +1,14 @@
+{
+  "name": "isodate",
+  "repo": "segmentio/isodate",
+  "license": "MIT",
+  "version": "0.0.1",
+  "description": "Parse an ISO date string into a Date.",
+  "keywords": ["ISO", "date", "datestring", "parse"],
+  "dependencies": {},
+  "development": {
+    "component/assert": "*",
+    "component/each": "*"
+  },
+  "scripts": ["index.js"]
+}

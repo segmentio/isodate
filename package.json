@@ -1,0 +1,6 @@
+{
+  "name": "isodate",
+  "repository": "git://github.com/segmentio/isodate.git",
+  "version": "0.0.1",
+  "license": "MIT",
+}
