@@ -27,8 +27,8 @@ isodate.is('string'); // false
 ### .parse(string)
   Parse the given ISO date `string` into a native `Date` object.
 
-### .is(string)
-  Check if the given `string` is an ISO date string.
+### .is(string, strict)
+  Check if the given `string` is an ISO date string. `strict` mode will return false for strings with a year, month _and_ date, for example `2013` would be `false`.
 
 ## License
 
