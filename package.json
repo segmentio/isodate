@@ -1,6 +1,24 @@
 {
   "name": "isodate",
-  "repository": "git://github.com/segmentio/isodate.git",
   "version": "0.0.1",
+  "description": "Parse an ISO date string into a Date",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/segmentio/isodate"
+  },
+  "keywords": [
+    "isodate"
+  ],
+  "author": "Segment.io",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/segmentio/isodate/issues"
+  }
 }
