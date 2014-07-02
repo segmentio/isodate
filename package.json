@@ -1,6 +1,6 @@
 {
   "name": "isodate",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Parse an ISO date string into a Date",
   "main": "index.js",
   "directories": {

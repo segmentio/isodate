@@ -18,7 +18,7 @@ var matcher = /^(\d{4})(?:-?(\d{2})(?:-?(\d{2}))?)?(?:([ T])(\d{2}):?(\d{2})(?::
  */
 
 exports.parse = function (iso) {
-  var numericKeys = [1, 5, 6, 7, 8, 11, 12];
+  var numericKeys = [1, 5, 6, 7, 11, 12];
   var arr = matcher.exec(iso);
   var offset = 0;
 
@@ -38,7 +38,9 @@ exports.parse = function (iso) {
   arr[2]--;
 
   // allow abitrary sub-second precision
-  if (arr[8]) arr[8] = (arr[8] + '00').substring(0, 3);
+  arr[8] = arr[8]
+    ? (arr[8] + '00').substring(0, 3)
+    : 0;
 
   // apply timezone if one exists
   if (arr[4] == ' ') {
