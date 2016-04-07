@@ -1,9 +1,6 @@
 
 BIN := node_modules/.bin
 
-SRC := $(wildcard lib/*.js)
-TESTS := $(wildcard test/*.js)
-
 test:
 	$(BIN)/mochify --phantomjs $(BIN)/phantomjs --reporter spec test/tests.js
 
