@@ -1,6 +1,6 @@
 {
   "name": "@segment/isodate",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Parse an ISO date string into a Date",
   "main": "index.js",
   "directories": {
