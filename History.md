@@ -1,4 +1,11 @@
 
+1.0.0 / 2016-04-07
+==================
+
+  * add `circle.yml`
+  * Makefile: add "node_modules" dep to `test`
+  * remove component support, add browserify support
+
 0.0.2 - July 2, 2014
 --------------------
 * fix case where milliseconds start with a zero
