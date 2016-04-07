@@ -1,14 +1,23 @@
 
-build: components index.js
-	@component build --dev
+BIN := node_modules/.bin
 
-components: component.json
-	@component install --dev
+SRC := $(wildcard lib/*.js)
+TESTS := $(wildcard test/*.js)
+
+test:
+	$(BIN)/mochify --phantomjs $(BIN)/phantomjs --reporter spec test/tests.js
+
+bundle.js: index.js node_modules
+	$(BIN)/browserify $< > $@
+
+node_modules: package.json
+	npm install
+	touch $@
 
 clean:
-	rm -fr build components
+	rm -f bundle.js
 
-test: build
-	open test/index.html
+distclean: clean
+	rm -rf node_modules
 
-.PHONY: test
+.PHONY: test clean distclean

@@ -1,9 +1,9 @@
 
-describe('isodate', function () {
-
 var assert = require('assert');
-var each = require('each');
-var isodate = require('isodate');
+var each = require('component-each');
+var isodate = require('..');
+
+describe('isodate', function () {
 
 var isos = {
   '2013'                         : 1356998400000,

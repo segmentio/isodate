@@ -1,5 +1,5 @@
 {
-  "name": "isodate",
+  "name": "@segment/isodate",
   "version": "0.0.2",
   "description": "Parse an ISO date string into a Date",
   "main": "index.js",
@@ -20,5 +20,11 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/segmentio/isodate/issues"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "component-each": "^0.2.6",
+    "mochify": "^2.17.0",
+    "phantomjs": "^2.1.3"
   }
 }
