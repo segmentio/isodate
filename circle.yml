@@ -5,7 +5,6 @@ machine:
 
 dependencies:
   pre:
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
     - npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
   override:
     - make node_modules
