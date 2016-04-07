@@ -1,7 +1,7 @@
 
 BIN := node_modules/.bin
 
-test:
+test: node_modules
 	$(BIN)/mochify --phantomjs $(BIN)/phantomjs --reporter spec test/tests.js
 
 bundle.js: index.js node_modules
