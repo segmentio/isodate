@@ -1,4 +1,3 @@
-
 machine:
   node:
     version: 4
@@ -6,10 +5,21 @@ machine:
 dependencies:
   pre:
     - npm config set "//registry.npmjs.org/:_authToken" $NPM_AUTH
+    - npm -g install codecov
   override:
-    - make node_modules
+    - make install
 
 test:
   override:
-    - make bundle.js
     - make test
+  post:
+    - cp -R coverage $CIRCLE_ARTIFACTS/
+    - codecov
+
+deployment:
+  publish:
+    owner: segmentio
+    # Works on e.g. `1.0.0-alpha.1`
+    tag: /[0-9]+(\.[0-9]+)*(-.+)?/
+    commands:
+      - npm publish .

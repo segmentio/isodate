@@ -1,7 +1,7 @@
 
-var assert = require('assert');
+var assert = require('proclaim');
 var each = require('component-each');
-var isodate = require('..');
+var isodate = require('../lib');
 
 describe('isodate', function () {
 
