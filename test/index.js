@@ -29,7 +29,7 @@ describe('isodate', function() {
       it('should not fail when the milliseconds start with a zero', function() {
         var iso = '2014-07-02T19:48:49.099Z';
         var date = isodate.parse(iso);
-        assert.equal(iso, date.toISOString());
+        assert.equal(date.getTime(), 1404330529099);
       });
     });
   });
