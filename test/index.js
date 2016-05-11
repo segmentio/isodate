@@ -18,10 +18,10 @@ describe('isodate', function() {
   };
 
   describe('.parse', function() {
-    each(isos, function(string, number) {
-      it(string, function() {
-        var date = isodate.parse(string);
-        assert.equal(date.getTime(), number);
+    each(isos, function(iso, timestamp) {
+      it(iso, function() {
+        var date = isodate.parse(iso);
+        assert.equal(date.getTime(), timestamp);
       });
     });
 
@@ -39,9 +39,9 @@ describe('isodate', function() {
       assert(!isodate.is('string'));
     });
 
-    each(isos, function(string) {
-      it(string, function() {
-        assert(isodate.is(string));
+    each(isos, function(iso) {
+      it(iso, function() {
+        assert(isodate.is(iso));
       });
     });
   });
