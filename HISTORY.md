@@ -1,3 +1,9 @@
+1.0.1 / 2016-05-11
+==================
+
+  * Modernize test harness
+  * Fix broken test case on IE <= 8
+  * Formatting and fix linting errors
 
 1.0.0 / 2016-04-07
 ==================
