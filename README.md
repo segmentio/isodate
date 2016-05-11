@@ -1,6 +1,6 @@
 # isodate
 
-[![CircleCI](https://img.shields.io/circleci/project/segmentio/isodate/master.svg?maxAge=2592000)]() [![Codecov](https://img.shields.io/codecov/c/github/segmentio/isodate.svg?maxAge=2592000)]()
+[![CircleCI](https://img.shields.io/circleci/project/segmentio/isodate.svg?maxAge=2592000)]() [![Codecov](https://img.shields.io/codecov/c/github/segmentio/isodate.svg?maxAge=2592000)]()
   
 Parse an ISO date string into a Date. Works cross-browser, even in the old, dumb ones ;)
 
