@@ -7,7 +7,7 @@ Parse an ISO date string into a Date. Works cross-browser, even in the old, dumb
 ## Installation
 
 ```sh
-$ component install segmentio/isodate
+$ npm install @segment/isodate
 ```
 
 ## Example
