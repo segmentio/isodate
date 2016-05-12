@@ -30,11 +30,6 @@ var customLaunchers = {
     browserName: 'safari',
     version: '9.0'
   },
-  sl_ie_6: {
-    base: 'SauceLabs',
-    browserName: 'internet explorer',
-    version: '6'
-  },
   sl_ie_7: {
     base: 'SauceLabs',
     browserName: 'internet explorer',
