@@ -1,6 +1,11 @@
 1.0.1 / 2016-05-11
 ==================
 
+  * Remove IE6 support
+
+1.0.1 / 2016-05-11
+==================
+
   * Modernize test harness
   * Fix broken test case on IE <= 8
   * Formatting and fix linting errors
