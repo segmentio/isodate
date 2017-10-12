@@ -39,6 +39,16 @@ describe('isodate', function() {
       assert(!isodate.is('string'));
     });
 
+    it('handles non-string input', function() {
+      // This object can't be converted to a string automatically because it
+      // contains an Object prototype method
+      var object = {
+        toString: {}
+      };
+
+      assert(!isodate.is(object));
+    });
+
     each(isos, function(iso) {
       it(iso, function() {
         assert(isodate.is(iso));
