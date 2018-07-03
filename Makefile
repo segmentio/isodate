@@ -59,7 +59,7 @@ ISTANBUL_FLAGS := \
 
 # Install dependencies.
 install:
-	yarn install --frozen-lockfile
+	yarn install
 
 # Remove temporary files and build artifacts.
 clean:
